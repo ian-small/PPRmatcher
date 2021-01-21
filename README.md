@@ -1,14 +1,14 @@
 # PPRmatcher
 Julia (https://julialang.org) code to match pentatricopeptide repeat (PPR) protein sequences to likely RNA targets.
-The software requires the ArgParse.jl and Statistics.jl packages to be installed.
+The software requires the ArgParse.jl and Statistics.jl packages to be installed.<br>
 
 The software uses scoring table to relate the the 5th/last amino acids of each PPR motif with the aligned nucleotide.
-The original idea is from Barkan et al. Plos Genetics 8:e1002910. Several scoring tables are available to choose from.
-Yan.tsv uses data from Yan et al. Nucleic Acids Res. 47:3728-3738; this is experimental data on binding of synthetic P-type PPR proteins to oligonucleotides in vitro.
-Kobayashi.tsv used data from Plant Cell Physiol. 60:862-874; this is from observed frequencies of different 5th/last combinations in alignments of natural PLS-type proteins to their target RNAs
-The Millman .tsv files are similarly derived from observed frequencies of different 5th/last combinations in alignments of natural PLS-type proteins to their target RNAs, but separate scoring tables have been derived for each type of PPR motif.
+The original idea is from Barkan et al. Plos Genetics 8:e1002910. Several scoring tables are available to choose from.<br>
+Yan.tsv uses data from Yan et al. Nucleic Acids Res. 47:3728-3738; this is experimental data on binding of synthetic P-type PPR proteins to oligonucleotides in vitro.<br>
+Kobayashi.tsv used data from Plant Cell Physiol. 60:862-874; this is from observed frequencies of different 5th/last combinations in alignments of natural PLS-type proteins to their target RNAs.<br>
+The Millman .tsv files are similarly derived from observed frequencies of different 5th/last combinations in alignments of natural PLS-type proteins to their target RNAs, but separate scoring tables have been derived for each type of PPR motif.<br>
 
-To run the software, install julia (instructions here: https://julialang.org/downloads/) and the ArgParse and Statistics packages (instructions here: https://datatofish.com/install-package-julia/)
+To run the software, install julia (instructions here: https://julialang.org/downloads/) and the ArgParse and Statistics packages (instructions here: https://datatofish.com/install-package-julia/)<br>
 
 PPRmatcher.jl requires three arguments:
 1. One or more PPR sequences in the output format from PPRfinder (https://github.com/ian-small/PPRfinder)
